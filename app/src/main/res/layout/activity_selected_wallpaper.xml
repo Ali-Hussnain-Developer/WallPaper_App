@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_tab_layout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvSelectedWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        app:cardCornerRadius="@dimen/_5dp"
+        app:cardElevation="@dimen/_5dp">
+
+        <ImageView
+            android:id="@+id/imgSelectedWallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/image_curve"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnSetWallpaper"
+        android:layout_width="@dimen/_250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvSelectedWallpaper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/button_curve"
+        android:text="@string/txt_set_wallpaper" />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WallpaperApp</string>
+    <string name="txt_set_wallpaper">Set As Wallpaper</string>
+    <string name="txt_wallpaper_is_set">Wallpaper is set</string>
+    <string name="txt_wallpaper_app">Wallpaper App</string>
+    <string name="txt_by_ali">Developed By Ali Hussnain</string>
+    <string name="txt_wallpaper">WallPapers</string>
+</resources>

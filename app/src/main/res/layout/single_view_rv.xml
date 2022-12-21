@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listItem"
+            type="com.example.wallpaperapp.model.ModelClass" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_7dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_10dp"
+            app:cardElevation="@dimen/_5dp">
+
+            <ImageView
+                android:id="@+id/wallpaperImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:loadImage="@{listItem.wallpaperImage}"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>
